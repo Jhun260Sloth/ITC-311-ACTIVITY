@@ -1,0 +1,950 @@
+CRITICAL - 2023-09-16 12:26:57 --> Cannot use temporary expression in write context
+in APPPATH/Controllers/UserController.php on line 14.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-09-16 12:28:15 --> Cannot use temporary expression in write context
+in APPPATH/Controllers/UserController.php on line 14.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-09-16 12:28:16 --> Cannot use temporary expression in write context
+in APPPATH/Controllers/UserController.php on line 14.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-09-16 12:39:35 --> Cannot use temporary expression in write context
+in APPPATH/Controllers/UserController.php on line 14.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-09-16 12:40:28 --> Cannot use temporary expression in write context
+in APPPATH/Controllers/UserController.php on line 14.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-09-16 12:40:28 --> Cannot use temporary expression in write context
+in APPPATH/Controllers/UserController.php on line 14.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-09-16 12:40:29 --> Cannot use temporary expression in write context
+in APPPATH/Controllers/UserController.php on line 14.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-09-16 12:40:29 --> Cannot use temporary expression in write context
+in APPPATH/Controllers/UserController.php on line 14.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-09-16 12:41:01 --> Cannot use temporary expression in write context
+in APPPATH/Controllers/UserController.php on line 14.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-09-16 12:41:02 --> Cannot use temporary expression in write context
+in APPPATH/Controllers/UserController.php on line 14.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-09-16 12:41:34 --> Class "App\Controllers\UserModel" not found
+in APPPATH/Controllers/UserController.php on line 14.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\UserController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php')
+CRITICAL - 2023-09-16 12:41:52 --> Class "App\Controllers\App\Controllers\UserModel" not found
+in APPPATH/Controllers/UserController.php on line 14.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\UserController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php')
+CRITICAL - 2023-09-16 12:41:58 --> Class "App\Controllers\UserModel" not found
+in APPPATH/Controllers/UserController.php on line 14.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\UserController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php')
+ERROR - 2023-09-16 12:51:12 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#6 /opt/lampp/htdocs/ITC311_ACTIVITY/app/Controllers/UserController.php(28): CodeIgniter\BaseModel->findAll()
+#7 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(919): App\Controllers\UserController->homepage()
+#8 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#9 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#10 /opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#3 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#5 /opt/lampp/htdocs/ITC311_ACTIVITY/app/Controllers/UserController.php(28): CodeIgniter\BaseModel->findAll()
+#6 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(919): App\Controllers\UserController->homepage()
+#7 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#8 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#9 /opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2023-09-16 12:51:12 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/UserController.php(28): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\UserController->homepage()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php')
+CRITICAL - 2023-09-16 12:52:13 --> syntax error, unexpected token "}", expecting "," or ";"
+in APPPATH/Controllers/UserController.php on line 24.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/CodeIgniter.php(877): class_exists()
+ 5 SYSTEMPATH/CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php')
+ERROR - 2023-09-16 12:52:20 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#6 /opt/lampp/htdocs/ITC311_ACTIVITY/app/Controllers/UserController.php(28): CodeIgniter\BaseModel->findAll()
+#7 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(919): App\Controllers\UserController->homepage()
+#8 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#9 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#10 /opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#3 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#5 /opt/lampp/htdocs/ITC311_ACTIVITY/app/Controllers/UserController.php(28): CodeIgniter\BaseModel->findAll()
+#6 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(919): App\Controllers\UserController->homepage()
+#7 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#8 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#9 /opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2023-09-16 12:52:20 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/UserController.php(28): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\UserController->homepage()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php')
+ERROR - 2023-09-16 12:58:37 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#6 /opt/lampp/htdocs/ITC311_ACTIVITY/app/Controllers/UserController.php(28): CodeIgniter\BaseModel->findAll()
+#7 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(919): App\Controllers\UserController->homepage()
+#8 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#9 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#10 /opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#3 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#5 /opt/lampp/htdocs/ITC311_ACTIVITY/app/Controllers/UserController.php(28): CodeIgniter\BaseModel->findAll()
+#6 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(919): App\Controllers\UserController->homepage()
+#7 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#8 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#9 /opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2023-09-16 12:58:37 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/UserController.php(28): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\UserController->homepage()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php')
+ERROR - 2023-09-16 13:01:39 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#6 /opt/lampp/htdocs/ITC311_ACTIVITY/app/Controllers/UserController.php(28): CodeIgniter\BaseModel->findAll()
+#7 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(919): App\Controllers\UserController->homepage()
+#8 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#9 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#10 /opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#3 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#5 /opt/lampp/htdocs/ITC311_ACTIVITY/app/Controllers/UserController.php(28): CodeIgniter\BaseModel->findAll()
+#6 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(919): App\Controllers\UserController->homepage()
+#7 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#8 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#9 /opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2023-09-16 13:01:39 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/UserController.php(28): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\UserController->homepage()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php')
+ERROR - 2023-09-16 13:02:23 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#6 /opt/lampp/htdocs/ITC311_ACTIVITY/app/Controllers/UserController.php(28): CodeIgniter\BaseModel->findAll()
+#7 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(919): App\Controllers\UserController->homepage()
+#8 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#9 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#10 /opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#3 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#5 /opt/lampp/htdocs/ITC311_ACTIVITY/app/Controllers/UserController.php(28): CodeIgniter\BaseModel->findAll()
+#6 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(919): App\Controllers\UserController->homepage()
+#7 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#8 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#9 /opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2023-09-16 13:02:23 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/UserController.php(28): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\UserController->homepage()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php')
+CRITICAL - 2023-09-16 13:06:02 --> Class "App\Controllers\App\Models\UserModel" not found
+in APPPATH/Controllers/UserController.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\UserController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php')
+ERROR - 2023-09-16 13:06:12 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#6 /opt/lampp/htdocs/ITC311_ACTIVITY/app/Controllers/UserController.php(28): CodeIgniter\BaseModel->findAll()
+#7 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(919): App\Controllers\UserController->homepage()
+#8 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#9 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#10 /opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#3 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#5 /opt/lampp/htdocs/ITC311_ACTIVITY/app/Controllers/UserController.php(28): CodeIgniter\BaseModel->findAll()
+#6 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(919): App\Controllers\UserController->homepage()
+#7 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#8 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#9 /opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2023-09-16 13:06:12 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/UserController.php(28): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\UserController->homepage()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php')
+ERROR - 2023-09-16 13:17:21 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#6 /opt/lampp/htdocs/ITC311_ACTIVITY/app/Controllers/UserController.php(28): CodeIgniter\BaseModel->findAll()
+#7 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(919): App\Controllers\UserController->homepage()
+#8 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#9 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#10 /opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#3 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#5 /opt/lampp/htdocs/ITC311_ACTIVITY/app/Controllers/UserController.php(28): CodeIgniter\BaseModel->findAll()
+#6 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(919): App\Controllers\UserController->homepage()
+#7 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#8 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#9 /opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2023-09-16 13:17:21 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/UserController.php(28): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\UserController->homepage()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php')
+CRITICAL - 2023-09-16 13:18:50 --> Class "CodeIgniter\Database\MySQL\Connection" not found
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(81): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH/Model.php(151): CodeIgniter\Database\Config::connect()
+ 4 APPPATH/Controllers/UserController.php(13): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\UserController->__construct()
+ 6 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php')
+ERROR - 2023-09-16 13:19:01 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#6 /opt/lampp/htdocs/ITC311_ACTIVITY/app/Controllers/UserController.php(28): CodeIgniter\BaseModel->findAll()
+#7 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(919): App\Controllers\UserController->homepage()
+#8 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#9 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#10 /opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#3 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#5 /opt/lampp/htdocs/ITC311_ACTIVITY/app/Controllers/UserController.php(28): CodeIgniter\BaseModel->findAll()
+#6 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(919): App\Controllers\UserController->homepage()
+#7 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#8 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#9 /opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2023-09-16 13:19:01 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/UserController.php(28): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\UserController->homepage()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php')
+ERROR - 2023-09-16 13:19:40 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#6 /opt/lampp/htdocs/ITC311_ACTIVITY/app/Controllers/UserController.php(28): CodeIgniter\BaseModel->findAll()
+#7 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(919): App\Controllers\UserController->homepage()
+#8 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#9 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#10 /opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#3 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#5 /opt/lampp/htdocs/ITC311_ACTIVITY/app/Controllers/UserController.php(28): CodeIgniter\BaseModel->findAll()
+#6 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(919): App\Controllers\UserController->homepage()
+#7 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#8 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#9 /opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2023-09-16 13:19:40 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/UserController.php(28): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\UserController->homepage()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php')
+ERROR - 2023-09-16 13:19:41 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#6 /opt/lampp/htdocs/ITC311_ACTIVITY/app/Controllers/UserController.php(28): CodeIgniter\BaseModel->findAll()
+#7 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(919): App\Controllers\UserController->homepage()
+#8 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#9 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#10 /opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#3 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#5 /opt/lampp/htdocs/ITC311_ACTIVITY/app/Controllers/UserController.php(28): CodeIgniter\BaseModel->findAll()
+#6 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(919): App\Controllers\UserController->homepage()
+#7 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#8 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#9 /opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2023-09-16 13:19:41 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/UserController.php(28): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\UserController->homepage()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php')
+CRITICAL - 2023-09-16 13:20:10 --> Class "CodeIgniter\Database\MySQL\Connection" not found
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(81): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH/Model.php(151): CodeIgniter\Database\Config::connect()
+ 4 APPPATH/Controllers/UserController.php(13): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\UserController->__construct()
+ 6 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php')
+ERROR - 2023-09-16 13:20:15 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#6 /opt/lampp/htdocs/ITC311_ACTIVITY/app/Controllers/UserController.php(28): CodeIgniter\BaseModel->findAll()
+#7 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(919): App\Controllers\UserController->homepage()
+#8 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#9 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#10 /opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#3 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#5 /opt/lampp/htdocs/ITC311_ACTIVITY/app/Controllers/UserController.php(28): CodeIgniter\BaseModel->findAll()
+#6 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(919): App\Controllers\UserController->homepage()
+#7 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#8 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#9 /opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2023-09-16 13:20:15 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/UserController.php(28): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\UserController->homepage()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php')
+ERROR - 2023-09-16 13:21:53 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#6 /opt/lampp/htdocs/ITC311_ACTIVITY/app/Controllers/UserController.php(28): CodeIgniter\BaseModel->findAll()
+#7 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(919): App\Controllers\UserController->homepage()
+#8 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#9 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#10 /opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#3 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#5 /opt/lampp/htdocs/ITC311_ACTIVITY/app/Controllers/UserController.php(28): CodeIgniter\BaseModel->findAll()
+#6 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(919): App\Controllers\UserController->homepage()
+#7 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#8 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#9 /opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2023-09-16 13:21:53 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/UserController.php(28): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\UserController->homepage()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php')
+ERROR - 2023-09-16 13:21:54 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#6 /opt/lampp/htdocs/ITC311_ACTIVITY/app/Controllers/UserController.php(28): CodeIgniter\BaseModel->findAll()
+#7 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(919): App\Controllers\UserController->homepage()
+#8 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#9 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#10 /opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#3 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#5 /opt/lampp/htdocs/ITC311_ACTIVITY/app/Controllers/UserController.php(28): CodeIgniter\BaseModel->findAll()
+#6 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(919): App\Controllers\UserController->homepage()
+#7 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#8 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#9 /opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2023-09-16 13:21:54 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/UserController.php(28): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\UserController->homepage()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php')
+ERROR - 2023-09-16 13:21:54 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#6 /opt/lampp/htdocs/ITC311_ACTIVITY/app/Controllers/UserController.php(28): CodeIgniter\BaseModel->findAll()
+#7 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(919): App\Controllers\UserController->homepage()
+#8 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#9 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#10 /opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#3 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#5 /opt/lampp/htdocs/ITC311_ACTIVITY/app/Controllers/UserController.php(28): CodeIgniter\BaseModel->findAll()
+#6 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(919): App\Controllers\UserController->homepage()
+#7 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#8 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#9 /opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2023-09-16 13:21:54 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/UserController.php(28): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\UserController->homepage()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php')
+ERROR - 2023-09-16 13:23:51 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#6 /opt/lampp/htdocs/ITC311_ACTIVITY/app/Controllers/UserController.php(28): CodeIgniter\BaseModel->findAll()
+#7 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(919): App\Controllers\UserController->homepage()
+#8 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#9 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#10 /opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#3 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#5 /opt/lampp/htdocs/ITC311_ACTIVITY/app/Controllers/UserController.php(28): CodeIgniter\BaseModel->findAll()
+#6 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(919): App\Controllers\UserController->homepage()
+#7 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#8 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#9 /opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2023-09-16 13:23:51 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/UserController.php(28): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\UserController->homepage()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php')
+ERROR - 2023-09-16 13:29:13 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#6 /opt/lampp/htdocs/ITC311_ACTIVITY/app/Controllers/UserController.php(28): CodeIgniter\BaseModel->findAll()
+#7 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(919): App\Controllers\UserController->homepage()
+#8 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#9 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#10 /opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#3 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#5 /opt/lampp/htdocs/ITC311_ACTIVITY/app/Controllers/UserController.php(28): CodeIgniter\BaseModel->findAll()
+#6 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(919): App\Controllers\UserController->homepage()
+#7 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#8 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#9 /opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2023-09-16 13:29:13 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/UserController.php(28): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\UserController->homepage()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php')
+ERROR - 2023-09-16 13:29:15 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#6 /opt/lampp/htdocs/ITC311_ACTIVITY/app/Controllers/UserController.php(28): CodeIgniter\BaseModel->findAll()
+#7 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(919): App\Controllers\UserController->homepage()
+#8 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#9 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#10 /opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#3 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#5 /opt/lampp/htdocs/ITC311_ACTIVITY/app/Controllers/UserController.php(28): CodeIgniter\BaseModel->findAll()
+#6 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(919): App\Controllers\UserController->homepage()
+#7 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#8 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#9 /opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2023-09-16 13:29:15 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/UserController.php(28): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\UserController->homepage()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php')
+ERROR - 2023-09-16 13:32:05 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#6 /opt/lampp/htdocs/ITC311_ACTIVITY/app/Controllers/UserController.php(28): CodeIgniter\BaseModel->findAll()
+#7 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(919): App\Controllers\UserController->homepage()
+#8 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#9 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#10 /opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#3 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#5 /opt/lampp/htdocs/ITC311_ACTIVITY/app/Controllers/UserController.php(28): CodeIgniter\BaseModel->findAll()
+#6 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(919): App\Controllers\UserController->homepage()
+#7 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#8 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#9 /opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2023-09-16 13:32:05 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/UserController.php(28): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\UserController->homepage()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php')
+ERROR - 2023-09-16 14:07:17 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#6 /opt/lampp/htdocs/ITC311_ACTIVITY/app/Controllers/UserController.php(28): CodeIgniter\BaseModel->findAll()
+#7 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(919): App\Controllers\UserController->homepage()
+#8 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#9 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#10 /opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#3 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#5 /opt/lampp/htdocs/ITC311_ACTIVITY/app/Controllers/UserController.php(28): CodeIgniter\BaseModel->findAll()
+#6 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(919): App\Controllers\UserController->homepage()
+#7 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#8 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#9 /opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2023-09-16 14:07:17 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/UserController.php(28): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\UserController->homepage()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php')
+ERROR - 2023-09-16 14:46:01 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#6 /opt/lampp/htdocs/ITC311_ACTIVITY/app/Controllers/UserController.php(28): CodeIgniter\BaseModel->findAll()
+#7 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(919): App\Controllers\UserController->homepage()
+#8 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#9 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#10 /opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#3 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#5 /opt/lampp/htdocs/ITC311_ACTIVITY/app/Controllers/UserController.php(28): CodeIgniter\BaseModel->findAll()
+#6 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(919): App\Controllers\UserController->homepage()
+#7 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#8 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#9 /opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /opt/lampp/htdocs/ITC311_ACTIVITY/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2023-09-16 14:46:01 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/UserController.php(28): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\UserController->homepage()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ITC311_ACTIVITY/public/index.php')
