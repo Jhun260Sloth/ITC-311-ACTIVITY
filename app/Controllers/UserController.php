@@ -18,6 +18,38 @@ class UserController extends BaseController
         //nah
     }
 
+    public function insert()
+    {
+        $ID = $_POST['ID'];
+        $data = [
+            'First' => $this->request->getVar('FirstName'),
+            'Last'=> $this->request->getVar('LastName')
+        ];
+        if ($ID!= null) {
+            $this->activity->set($data)->where('ID', $ID)->update();
+        } else {
+               $this->activity->save($data);
+        }
+    
+        return redirect()->to('/activity');
+    }
+
+    public function edit($ID)
+        {
+            $data = [
+                'activity' => $this->activity->findAll(),
+                'user' => $this->activity->where('ID', $ID)->first(),
+            ];
+            return view('homepage', $data);
+        }
+
+
+    public function delete($ID)
+    {
+        $this->activity->delete($ID);
+        return redirect()->to('/activity');
+    }
+
     public function activity($activity)
     {
         echo $activity;
@@ -25,7 +57,7 @@ class UserController extends BaseController
 
     public function homepage()
     {
-       $data = $this->activity->findAll();
-        print_r($data);
+       $data['activity'] = $this->activity->findAll();
+       return view('homepage', $data);
     }
 }
