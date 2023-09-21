@@ -1,30 +1,22 @@
-# Project Name
+Laboratory 1 ITC-311
 
-Brief description of your project.
+Output
+![image](https://github.com/Jhun260Sloth/ITC-311-ACTIVITY/assets/99332717/3323af57-9687-4de6-a9b7-40fe79a61818)
 
-## Table of Contents
+CRUD
 
-- [About](#about)
-- [Features](#features)
-- [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+Table_Products
+ProductName
+ProductDescription
+ProductCategory
+ProductQuantity
+ProductPrice
 
-## About
+Table_Category
+ProductCategory
 
-Provide a short description of your project. Explain what it does and why it's useful.
-
-## Features
-
-List the key features and functionalities of your project.
-
-## Getting Started
-
-Include instructions on how to get started with your project. This may include installation steps, dependencies, or prerequisites.
-
-```bash
-# Example commands
-git clone https://github.com/yourusername/your-repo.git
-cd your-repo
-npm install
+HTML elements to be use:
+select:box
+input:text
+input:number
+ul
