@@ -22,8 +22,11 @@ class UserController extends BaseController
     {
         $ID = $_POST['ID'];
         $data = [
-            'First' => $this->request->getVar('FirstName'),
-            'Last'=> $this->request->getVar('LastName')
+            'ProductName' => $this->request->getVar('ProdName'),
+            'ProductDescription'=> $this->request->getVar('ProdDesc'),
+            'ProductCategory'=> $this->request->getVar('ProdCat'),
+            'ProductQuantity'=> $this->request->getVar('ProdQuan'),
+            'ProductPrice'=> $this->request->getVar('ProdPr'),
         ];
         if ($ID!= null) {
             $this->activity->set($data)->where('ID', $ID)->update();
@@ -42,6 +45,16 @@ class UserController extends BaseController
             ];
             return view('homepage', $data);
         }
+
+    public function getCategories()
+    {
+        // Fetch distinct ProductCategory values from your database
+        $query = $this->distinct()
+                      ->select('ProductCategory') // Select the ProductCategory column
+                      ->get($this->table);
+
+        return $query->getResultArray();
+    }
 
 
     public function delete($ID)
