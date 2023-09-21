@@ -5,18 +5,5 @@ Output
 
 CRUD
 
-Table_Products
-ProductName
-ProductDescription
-ProductCategory
-ProductQuantity
-ProductPrice
-
-Table_Category
-ProductCategory
-
-HTML elements to be use:
-select:box
-input:text
-input:number
-ul
+Name: De Jesus Jhunnel O.
+Section: 3-F1
