@@ -5,5 +5,5 @@ Output
 
 CRUD
 
-Name: De Jesus Jhunnel O.
+# Name: De Jesus Jhunnel O.
 # Section: 3-F1
