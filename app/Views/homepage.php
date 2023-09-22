@@ -145,6 +145,30 @@
 		</script>
 
 
+<div class="mt-5">
+
+  <h3 class="d-inline-block">Unordered List</h3>
+  <br>
+   <br>
+<ul style="list-style-type:circle">
+
+	<?php foreach ($activity as $us): ?>
+		                <li><b>ID: </b><?= $us['ID'] ?></li>
+		                <li><b>ProductName: 	</b><?= $us['ProductName'] ?></li>
+		                <li><b>Product Description: 	</b><?= $us['ProductDescription'] ?></li>
+		                <li><b>Product Category: 	</b><?= $us['ProductCategory'] ?></li>
+		                <li><b>Product Quantity:	</b><?= $us['ProductQuantity'] ?></li>
+		                <li><b>Product Price: 	</b><?= $us['ProductPrice'] ?></li>
+		                <li>
+		                    <a href="/edit/<?= $us['ID']?>" class="btn btn-primary">Edit</a>
+		                    <a href="/delete/<?= $us['ID']?>" class="btn btn-danger">Delete</a>
+		                </li>
+		               <br>
+		        <?php endforeach; ?>
+</ul>
+</div>
+
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </div>
 </div>
