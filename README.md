@@ -1,10 +1,10 @@
 # Laboratory 1 ITC-311
 
 Output
-![image](https://github.com/Jhun260Sloth/ITC-311-ACTIVITY/assets/99332717/3323af57-9687-4de6-a9b7-40fe79a61818)
 
-![image](https://github.com/Jhun260Sloth/ITC-311-ACTIVITY/assets/99332717/05347d85-0f5b-4153-a1e5-6cc74b7ad3a7)
+![image](https://github.com/Jhun260Sloth/ITC-311-ACTIVITY/assets/99332717/2e6e7b28-6834-45b3-a6e4-1893496078d2)
 
+![image](https://github.com/Jhun260Sloth/ITC-311-ACTIVITY/assets/99332717/5a064cb4-532e-4d00-9f53-ba111604f041)
 
 CRUD
 
