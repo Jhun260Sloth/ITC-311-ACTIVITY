@@ -146,31 +146,68 @@
 
 
 <div class="mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
 
-  <h3 class="d-inline-block">Unordered List</h3>
-  <br>
-   <br>
-<ul style="list-style-type:circle">
+                <h3 class="d-inline-block">Unordered List</h3>
+                <br>
+                <br>
+                <div style="height: 300px; overflow-y: auto;">
+                    <ul style="list-style-type: circle">
 
-	<?php foreach ($activity as $us): ?>
-		                <li><b>ID: </b><?= $us['ID'] ?></li>
-		                <li><b>ProductName: 	</b><?= $us['ProductName'] ?></li>
-		                <li><b>Product Description: 	</b><?= $us['ProductDescription'] ?></li>
-		                <li><b>Product Category: 	</b><?= $us['ProductCategory'] ?></li>
-		                <li><b>Product Quantity:	</b><?= $us['ProductQuantity'] ?></li>
-		                <li><b>Product Price: 	</b><?= $us['ProductPrice'] ?></li>
-		                <li>
-		                    <a href="/edit/<?= $us['ID']?>" class="btn btn-primary">Edit</a>
-		                    <a href="/delete/<?= $us['ID']?>" class="btn btn-danger">Delete</a>
-		                </li>
-		               <br>
-		        <?php endforeach; ?>
-</ul>
+                        <?php foreach ($activity as $us): ?>
+                            <li><b>ID: </b><?= $us['ID'] ?></li>
+                            <li><b>ProductName:  </b><?= $us['ProductName'] ?></li>
+                            <li><b>Product Description:  </b><?= $us['ProductDescription'] ?></li>
+                            <li><b>Product Category:  </b><?= $us['ProductCategory'] ?></li>
+                            <li><b>Product Quantity: </b><?= $us['ProductQuantity'] ?></li>
+                            <li><b>Product Price:  </b><?= $us['ProductPrice'] ?></li>
+                            <br>
+                            <li>
+                                <a href="/edit/<?= $us['ID']?>" class="btn btn-primary">Edit</a>
+                                <a href="/delete/<?= $us['ID']?>" class="btn btn-danger">Delete</a>
+                            </li>
+                            <br>
+                        <?php endforeach; ?>
+                    </ul>
+                </div>
+            </div>
+
+			<div class="col-sm">
+		    <h3 class="d-inline-block">Category</h3>
+		    <br>
+		    <div style="height: 300px; overflow-y: auto;">
+		        <table class="table table-striped mt-3">
+		            <thead>
+		                <tr>
+		                    <th>ProductCategory</th>
+		                </tr>
+		            </thead>
+		            <tbody>
+		                <?php foreach ($activity as $us): ?>
+		                    <tr data-category="<?= $us['ProductCategory'] ?>">
+		                        <td><?= $us['ProductCategory'] ?></td>
+		                    </tr>
+		                <?php endforeach; ?>
+		            </tbody>
+		        </table>
+		    </div>
+		</div>
+
+
+
+
+
+		</div>
+	</div>
 </div>
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </div>
+
+
 </div>
 </body>
 </html>
